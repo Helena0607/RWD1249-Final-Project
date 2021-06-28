@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyful Jewels - Admin Panel</title>
-    <link rel="stylesheet" href="js/mockdata.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <title>Joyful Jewels</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: 'Akaya Kanadaka', cursive;
+            margin: 0;
+            height: 100%;
+            background-color: rgb(216, 172, 209);
+            animation: pulse 5s infinite;
+        }
+        
+        .main {
+            max-width: 1100px;
+            margin: auto;
+        }
+        
+        @keyframes pulse {
+            0% {
+                background-color: rgb(216, 172, 209);
+            }
+            50% {
+                background-color: rgb(164, 197, 224);
+            }
+            100% {
+                background-color: rgb(221, 143, 147)
+            }
+        }
+        
+        .copy {
+            overflow: hidden;
+            padding: 15px;
+            background-color: #d4e6f1;
+            color: rgb(236, 100, 100);
+            text-align: center;
+            margin-top: 0;
+            border-top: 2px solid white;
+            max-height: 80px;
+            font-family: 'Cinzel', serif;
+            font-size: small;
+        }
+        
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+            font-family: 'Cinzel', serif;
+        }
+        /* Header/logo Title */
+        
+        .bg-image {
+            background-image: url("images/general/shop.jpg");
+            height: 60%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+        
         table {
             border-spacing: 0;
             width: 98%;
@@ -43,11 +109,41 @@
         input[type=button]:hover {
             opacity: 0.8;
         }
+        /* Adding animation */
+        
+        h1 {
+            animation-duration: 6s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 300%;
+            }
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+        }
+        
+        @media screen and (max-width: 700px) {
+            .navbar {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <div class="bg-image"></div>
+
     <div class="main">
+        <h1>Admin Panel</h1>
+        <hr>
+
         <!--Table-->
         <table id="myTable">
             <thead>
@@ -55,6 +151,12 @@
                     <th id="no">ID</th>
                     <th id="name">Username</th>
                     <th id="password">Password</th>
+                </tr>
+
+                <tr>
+                    <th id="no">01</th>
+                    <th id="name">helena@gmail.com</th>
+                    <th id="password">102030</th>
                 </tr>
             </thead>
             <tbody id="datas">
@@ -64,6 +166,9 @@
         <input type="button" onclick="Insert_Data()" value="Insert" />
         <input type="button" onclick="myFunction()" value="Back" />
     </div>
+
+
+
 
     <script>
         var predefinedData = [{
@@ -86,7 +191,7 @@
             table.innerHTML += tr;
             //Help......  
         }
-        
+
         function myFunction() {
             location.replace("index.html")
         }
