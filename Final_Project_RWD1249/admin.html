@@ -62,7 +62,7 @@
         </table>
 
         <input type="button" onclick="Insert_Data()" value="Insert" />
-
+        <input type="button" onclick="myFunction()" value="Back" />
     </div>
 
     <script>
@@ -85,6 +85,10 @@
             })
             table.innerHTML += tr;
             //Help......  
+        }
+        
+        function myFunction() {
+            location.replace("index.html")
         }
     </script>
 
