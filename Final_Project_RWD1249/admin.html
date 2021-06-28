@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyful Jewels - Admin Panel</title>
+    <link rel="stylesheet" href="js/mockdata.js">
+    <style>
+        table {
+            border-spacing: 0;
+            width: 98%;
+            border: 1px solid #ddd;
+            margin: 8px;
+        }
+        
+        th {
+            cursor: pointer;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 16px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        
+        input[type=button] {
+            background-color: #b0e96f;
+            color: rgb(150, 9, 9);
+            border: none;
+            letter-spacing: 3px;
+            font-family: 'Marcellus SC', serif;
+            font-weight: bold;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 60px;
+        }
+        
+        input[type=button]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!--Table-->
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th id="no">ID</th>
+                    <th id="name">Username</th>
+                    <th id="password">Password</th>
+                </tr>
+            </thead>
+            <tbody id="datas">
+            </tbody>
+        </table>
+
+        <input type="button" onclick="Insert_Data()" value="Insert" />
+
+    </div>
+
+    <script>
+        var predefinedData = [{
+            id: 1,
+            email: "helena @gmail.com",
+            password: "102030"
+        }]
+
+        //Insert data function
+        function Insert_Data() {
+            var table = document.getElementById("datas");
+            table.innerHTML = "";
+            var tr = "";
+            predefinedData.forEach(x => {
+                tr += '<tr>';
+                tr += '<td>' + x.id + '</td>' + '<td>' + x.email + '</td>' + '<td>' + x.password + '</td>'
+                tr += '</tr>'
+
+            })
+            table.innerHTML += tr;
+            //Help......  
+        }
+    </script>
+
+</body>
+
+</html>

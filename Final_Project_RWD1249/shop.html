@@ -1,0 +1,296 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyful Jewels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <!-- Link to font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+        <header>
+            <div class="info">
+                <ul class="easy-info">
+                    <li><i class="fas fa-phone-alt fa-rotate-40"> &nbsp;</i><a href="#">Call Us: +959458793652</a></li>
+                    <li><i class="fas fa-envelope-open-text"></i> &nbsp; <a href="#">E-mail: joyfuljewels@gmail.com</a></li>
+                    <li><i class="far fa-user"></i> &nbsp; <a href="login.html">My Account</a></li>
+                    <li><i class="fas fa-shopping-cart"></i> &nbsp; <a href="cart.html">My Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="header">
+                <!-- <form>
+                    <input type="text" name="search" placeholder="Search..">
+                </form> -->
+                <h1><i class="fas fa-cannabis"></i> &nbsp; Joyful Jewllery Shop</h1>
+            </div>
+
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="text">
+                <h1>Diamond Rings</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <button>Shop Now</button>
+            </div>
+        </div>
+
+
+        <h2 id="text">GALLERY</h2>
+
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('necklace')"> Necklace</button>
+            <button class="btn" onclick="filterSelection('earring')"> Earring</button>
+            <button class="btn" onclick="filterSelection('ring')"> Ring</button>
+            <button class="btn" onclick="filterSelection('bracelet')"> Bracelet</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="gallery-row">
+            <div class="column ring">
+                <div class="content">
+                    <img src="images/rings/diamond_5.jpg" alt="Ring" style="width:100%">
+                    <h4>Classic Ring</h4>
+                    <p>$ 3,580 </p>
+                </div>
+            </div>
+            <div class="column ring">
+                <div class="content">
+                    <img src="images/rings/wedding_4.jpg" alt="Ring" style="width:100%">
+                    <h4>Wedding Ring</h4>
+                    <p>$ 6,285</p>
+                </div>
+            </div>
+            <div class="column ring">
+                <div class="content">
+                    <img src="images/rings/wedding_2.jpg" alt="Ring" style="width:100%">
+                    <h4>Diamond Ring</h4>
+                    <p>$ 5,580 </p>
+                </div>
+            </div>
+
+            <div class="column bracelet">
+                <div class="content">
+                    <img src="images/bracelets/bracelets_13.jpg" alt="Bracelet" style="width:100%">
+                    <h4>Diamond Bracelet</h4>
+                    <p>$ 8,285</p>
+                </div>
+            </div>
+            <div class="column bracelet">
+                <div class="content">
+                    <img src="images/bracelets/bra.jpg" alt="Bracelet" style="width:100%">
+                    <h4>Spring Bracelet</h4>
+                    <p>$ 3,285</p>
+                </div>
+            </div>
+            <div class="column bracelet">
+                <div class="content">
+                    <img src="images/bracelets/bracelets_10.jpg" alt="Bracelet" style="width:100%">
+                    <h4>Pure Bracelet</h4>
+                    <p>$ 4,285</p>
+                </div>
+            </div>
+
+            <div class="column earring">
+                <div class="content">
+                    <img src="images/earrings/earrings_4.jpg" alt="Earring" style="width:100%">
+                    <h4>Diamond Earring</h4>
+                    <p>$ 4,560</p>
+                </div>
+            </div>
+            <div class="column earring">
+                <div class="content">
+                    <img src="images/earrings/earrings_5.jpg" alt="Earring" style="width:100%">
+                    <h4>Earring</h4>
+                    <p>$3,250</p>
+                </div>
+            </div>
+            <div class="column earring">
+                <div class="content">
+                    <img src="images/earrings/earrings_9.jpg" alt="Earring" style="width:100%">
+                    <h4>Moon Earring</h4>
+                    <p>$3,899</p>
+                </div>
+            </div>
+            <div class="column earring">
+                <div class="content">
+                    <img src="images/earrings/earrings_2.jpg" alt="Earring" style="width:100%">
+                    <h4>Fan Earring</h4>
+                    <p>$2,980</p>
+                </div>
+            </div>
+            <div class="column earring">
+                <div class="content">
+                    <img src="images/earrings/earrings_7.jpg" alt="Earring" style="width:100%">
+                    <h4>Classic Earring</h4>
+                    <p>$2,980</p>
+                </div>
+            </div>
+            <div class="column earring">
+                <div class="content">
+                    <img src="images/earrings/earrings_12.jpg" alt="Earring" style="width:100%">
+                    <h4>Round Earring</h4>
+                    <p>$3,980</p>
+                </div>
+            </div>
+
+
+            <div class="column necklace">
+                <div class="content">
+                    <img src="images/necklaces/necklaces_12.jpg" alt="Necklace" style="width:100%">
+                    <h4>One Necklace</h4>
+                    <p>$2,580</p>
+                </div>
+            </div>
+            <div class="column necklace">
+                <div class="content">
+                    <img src="images/necklaces/necklaces_3.jpg" alt="Necklace" style="width:100%">
+                    <h4>Pearl Necklace</h4>
+                    <p>$6,800</p>
+                </div>
+            </div>
+            <div class="column necklace">
+                <div class="content">
+                    <img src="images/necklaces/necklaces_9.jpg" alt="Necklace" style="width:100%">
+                    <h4>Classic Necklace</h4>
+                    <p>$8,500</p>
+                </div>
+            </div>
+            <div class="column necklace">
+                <div class="content">
+                    <img src="images/necklaces/necklaces_10.jpg" alt="Necklace" style="width:100%">
+                    <h4>Spring Necklace</h4>
+                    <p>$2,500</p>
+                </div>
+            </div>
+            <div class="column necklace">
+                <div class="content">
+                    <img src="images/necklaces/necklaces_14.jpg" alt="Necklace" style="width:100%">
+                    <h4>Stick Necklace</h4>
+                    <p>$2,580</p>
+                </div>
+            </div>
+            <div class="column necklace">
+                <div class="content">
+                    <img src="images/necklaces/necklaces_11.jpg" alt="Necklace" style="width:100%">
+                    <h4>Flower Necklace</h4>
+                    <p>$2,500</p>
+                </div>
+            </div>
+            <!-- END GRID -->
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="address">
+                <h2 style="border-bottom: 1px solid white;">Business Time</h2>
+                <p>Mon -Fri: 09:00am-07:00pm</p>
+                <p>Saturday: 09:00am-05:00pm</p>
+                <p>Sunday: Closed</p>
+            </div>
+
+            <div class="newsletter">
+                <h2 style="border-bottom: 1px solid white;">Newsletter</h2>
+                <input type="text" placeholder="Email address" name="mail" required>
+                <input type="submit" value="Subscribe">
+            </div>
+
+            <div class="socialmedia">
+                <h2 style="border-bottom: 1px solid white;">Social Media</h2>
+                <p>Lorem ipsum dolor sit amet, an his etiam torquatos.</p>
+                <div class="social">
+                    <a href="https://fb.com" class="social-link">
+                        <i class="fab fa-facebook social-icon"></i>
+                    </a>
+                    <a href="https://twitter.com" class="social-link">
+                        <i class="fab fa-twitter social-icon"></i>
+                    </a>
+                    <a href="https://instagram.com" class="social-link">
+                        <i class="fab fa-instagram social-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="copy">All Rights Reserved. &copy; 2021 Joyful Jewels Designed By Helena</p>
+        <!-- END MAIN -->
+    </div>
+
+    <script>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+
+</body>
+
+</html>

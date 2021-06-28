@@ -1,0 +1,554 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(238, 189, 189, 0.2);
+}
+
+
+/* Header -> navigation bar */
+
+.nav {
+    background-color: rgb(252, 244, 244);
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Marcellus SC', serif;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 12px 3px;
+    margin: 0 10px;
+}
+
+.nav li:last-child {
+    border-right: none;
+}
+
+.nav li a {
+    color: rgb(236, 100, 100);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    padding: 8px 16px;
+    margin: 0 4px;
+    background: rgba(233, 212, 212, 0.13);
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.nav li a:hover {
+    background-color: #f5dcc9;
+}
+
+
+/* Top Header -> Contact Information -> list and form */
+
+.header {
+    background-color: rgb(252, 246, 246);
+    color: rgb(204, 7, 7);
+    padding: 10px;
+    max-height: 150px;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Mate SC', serif;
+}
+
+.info {
+    height: 50px;
+    width: auto;
+    text-align: left;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.easy-info {
+    background-color: #d4e6f1;
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.easy-info li {
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px 8px;
+    margin: 0 5px;
+}
+
+.easy-info li:last-child {
+    border-right: none;
+}
+
+.easy-info li a {
+    color: rgb(236, 100, 100);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    padding: 8px 12px;
+    margin: 0 4px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.easy-info li a:hover {
+    background-color: #f5dcc9;
+}
+
+.header input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float: left;
+    margin: 20px 30px 15px 0px;
+}
+
+.header input[type=text]:focus {
+    width: 100%;
+}
+
+
+/* Header -> Banner -> Text, Button and Image */
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rings/wedding_3.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.banner p {
+    font-family: 'Parisienne', cursive;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.text button,
+.pro-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: rgb(150, 9, 9);
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Marcellus SC', serif;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+text button:hover,
+.pro-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.container {
+    visibility: hidden;
+    height: 10px;
+}
+
+
+/* Home page -> Trending Item -> Product with price */
+
+.textone {
+    color: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'IM Fell English SC', serif;
+    margin-left: 8px;
+}
+
+.trend-item {
+    margin: auto;
+}
+
+.item-row {
+    margin: 8px -16px;
+}
+
+.item-row,
+.item-row>.item-column {
+    padding: 8px;
+}
+
+.item-column {
+    float: left;
+    width: 25%;
+}
+
+.item-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.item button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
+}
+
+
+/* Home Page -> Announcement for promotion */
+
+.pro-row {
+    display: flex;
+}
+
+.promotion {
+    flex: 45%;
+    margin: 10px;
+    padding: 10px;
+    height: 430px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.promotion img {
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.promotion .pro-text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 96%;
+    padding: 8px 30px;
+    font-family: 'PT Serif', serif;
+}
+
+
+/* Home Page -> Item Gallery */
+
+div.gallery {
+    margin-left: 15px;
+    margin-bottom: 8px;
+    border: 1px solid rgb(56, 51, 51);
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Footer -> Social Link, Subscription and Address */
+
+.footer {
+    max-width: 1000px;
+    max-height: 100px;
+}
+
+.address,
+.newsletter,
+.socialmedia {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 250px;
+    font-family: 'PT Serif', serif;
+}
+
+.newsletter input[type=text],
+.newsletter input[type=submit] {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid rgb(223, 245, 182);
+}
+
+.newsletter input[type=text] {
+    width: 100%;
+}
+
+.newsletter input[type=submit] {
+    background-color: #b0e96f;
+    color: rgb(150, 9, 9);
+    border: none;
+    letter-spacing: 3px;
+    font-family: 'Marcellus SC', serif;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.copy {
+    overflow: hidden;
+    padding: 20px;
+    background-color: #d4e6f1;
+    color: rgb(236, 100, 100);
+    text-align: center;
+    margin-top: 0;
+    border-top: 2px solid white;
+    font-family: 'Crimson Text', serif;
+}
+
+
+/* About Page -> Introduction for shop */
+
+.introduction,
+.contact {
+    max-width: 650px;
+    text-align: center;
+    padding: 10px;
+    margin: 30px auto;
+}
+
+.introduction h2,
+.shop-col h2,
+.team-row h2,
+.contact h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.introduction p,
+.contact p {
+    flex: 0 0 100%;
+    max-width: 100%;
+    line-height: 1.5em;
+    font-family: 'PT Serif', serif;
+}
+
+
+/*About Page -> History Of shop */
+
+.shop-row {
+    display: flex;
+    width: 100%;
+}
+
+.shop-col {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+}
+
+.shop-col p {
+    margin: 10px;
+    line-height: 1.5em;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 1px;
+}
+
+.shop-col h2 {
+    margin: 10px 20px 0px 0px;
+}
+
+
+/* About Page -> Team Member */
+
+.team-col {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    background-color: rgba(238, 189, 189, 0.2);
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.team {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.team-txt {
+    padding: 0 16px;
+}
+
+.team-txt::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.team-txt h2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #09C;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.social {
+    display: block;
+}
+
+.social-link {
+    color: #626364;
+    display: inline-block;
+    border-radius: 1px;
+    background-color: transparent;
+    font-size: 1.3rem;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.team-row h2 {
+    margin-left: 80px;
+}
+
+
+/* Parallax */
+
+.parallax {
+    background-image: url("../images/rings/engagement.jpg");
+    height: 30%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Contact Us Page -> contact info */
+
+.contact-row {
+    display: flex;
+}
+
+.contact-col {
+    flex: 50%;
+    padding: 10px;
+    margin: 20px;
+}
+
+.contact-info {
+    padding: 10px;
+    letter-spacing: 1.2px;
+    line-height: 2em;
+}
+
+.contact-col h2 {
+    margin-top: 0;
+    color: rgb(236, 100, 100);
+    font-family: 'IM Fell English SC', serif;
+}
+
+.contact-form input[type=text],
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #d1dae2;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    width: 100%;
+}
+
+.contact-form input[type=submit] {
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #b0e96f;
+    color: rgb(150, 9, 9);
+    border: none;
+    letter-spacing: 3px;
+    font-family: 'Marcellus SC', serif;
+    font-weight: bold;
+}
